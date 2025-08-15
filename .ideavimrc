@@ -10,7 +10,7 @@
 " map the leader key <leader>
 let mapleader = ' '
 " noremap <leader>cc :edit ~/.ideavimrc<cr>
-
+map <leader>wf :write<cr>
 map <leader>gd <Action>(GotoImplementation)
 map <leader>bb <Action>(Back)
 inoremap <C-k> <Up>
@@ -85,3 +85,17 @@ xnoremap p P
 
 "" Map \b to toggle the breakpoint on the current line
 "map \b <Action>(ToggleLineBreakpoint)
+
+
+
+
+
+" How do I map this to Ctrl J / Ctrl K for moving up and down between code selection? Couldn't find any Action Ids for this one
+
+" This can be done in the default settings (outside your rc file). Go to settings > Keymap. Other > List Actions > Select Next Row. Add shortcut there.
+
+" More generally, it is also possible to map Up/Down/Left/Right to Ctrl-[hjkl]. In Keymap: Editor Actions > Down. Using this, you can use Ctrl j/k to walk trough other lists as well. Like for instance the project explorer or a search menu.
+" Try this in your .ideavimrc file:
+
+" inoremap <c-k> <Up>
+" inoremap <c-j> <Down>
