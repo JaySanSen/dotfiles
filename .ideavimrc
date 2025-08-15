@@ -11,6 +11,11 @@
 let mapleader = ' '
 " noremap <leader>cc :edit ~/.ideavimrc<cr>
 
+map <leader>gd <Action>(GotoImplementation)
+map <leader>bb <Action>(Back)
+inoremap <C-k> <Up>
+inoremap <C-j> <Down>
+
 set scrolloff=5
 
 " Set relative numbers for easier navigation
