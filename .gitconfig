@@ -1,0 +1,8 @@
+[user]
+	name = Sanjay Senthilkumar
+	email = 183524427+JaySanSen@users.noreply.github.com
+	signingkey = FA10D62727198FA8
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true

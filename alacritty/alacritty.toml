@@ -1,0 +1,12 @@
+[general]
+live_config_reload = true
+
+
+[font]
+normal = { family = "JetBrainsMonoNL NFM", style = "SemiBold" }
+
+[terminal]
+shell = "/bin/bash"
+
+[colors.primary]
+background = "#0f0f0f"
