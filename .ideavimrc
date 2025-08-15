@@ -6,6 +6,11 @@
 "" -- Suggested options --
 " Show a few lines of context around the cursor. Note that this makes the
 " text scroll if you mouse-click near the start or end of the window.
+
+" map the leader key <leader>
+let mapleader = ' '
+" noremap <leader>cc :edit ~/.ideavimrc<cr>
+
 set scrolloff=5
 
 " Set relative numbers for easier navigation
@@ -35,7 +40,11 @@ let g:highlightedyank_highlight_color = "rgba(133,165,214,255)"
 
 " let g:highlightedyank_highlight_foreground_color = "rgba(0, 0, 0, 255)"
 
+" jump between angle brackets with % just like how we jump to other bracket pairs
+set matchpairs+=<:>
 
+" smart join functionality
+" set ideajoin
 
 " Don't use Ex mode, use Q for formatting.
 map Q gq
