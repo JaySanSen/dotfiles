@@ -4,5 +4,9 @@
 	signingkey = FA10D62727198FA8
 [commit]
 	gpgsign = true
+	template = /home/sanjay/.gitmessage.txt
 [tag]
 	gpgsign = true
+[core]
+	excludesfile = /home/sanjay/.gitignore_global
+	editor = nvim
