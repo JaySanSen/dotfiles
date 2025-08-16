@@ -19,6 +19,12 @@ let mapleader = ' '
 map <leader>gd <Action>(GotoImplementation)
 " Go back to place where we came from
 map <leader>gb <Action>(Back)
+" Find class
+map <leader>gc <Action>(GotoClass)
+" Find file
+map <leader>gf <Action>(GotoFile)
+" Find symbol
+map <leader>gs <Action>(GotoSymbol)
 
 
 map <leader>mj <Action>(MoveLineDown)
