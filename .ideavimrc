@@ -6,26 +6,38 @@
 "" -- Suggested options --
 " Show a few lines of context around the cursor. Note that this makes the
 " text scroll if you mouse-click near the start or end of the window.
-
-" map the leader key <leader>
-let mapleader = ' '
-" noremap <leader>cc :edit ~/.ideavimrc<cr>
-map <leader>wf :write<cr>
-map <leader>gd <Action>(GotoImplementation)
-map <leader>bb <Action>(Back)
-inoremap <C-k> <Up>
-inoremap <C-j> <Down>
-
 set scrolloff=5
 
 " Set relative numbers for easier navigation
 set rnu
 
+" map the leader key <leader>
+let mapleader = ' '
+" noremap <leader>cc :edit ~/.ideavimrc<cr>
+
+" Go to definition
+map <leader>gd <Action>(GotoImplementation)
+" Go back to place where we came from
+map <leader>gb <Action>(Back)
+
+
+map <leader>mj <Action>(MoveLineDown)
+map <leader>mk <Action>(MoveLineUp)
+
+inoremap <C-k> <Up>
+inoremap <C-j> <Down>
+
 " Do incremental searching.
 set incsearch
-
-" This will highlight the searched text. To undo highlight do :nohl
+" This will highlight the searched text. To undo highlight do :nohlsearch or :nohl
 set hlsearch
+" case insensitive search
+set ignorecase
+" To perform case sensitive search when one letter is capitalized. For example searching for action will show both Action and action but search for Action will only show Action since A is capitalized
+set smartcase
+" clear text highlighted due to search
+map <leader>nhl :nohlsearch<Cr>
+
 
 " Make use of the system clipboard for copy pasting from and to other applications
 " sync vim clipboard with OS clipboard
