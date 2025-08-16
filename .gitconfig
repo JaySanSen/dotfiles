@@ -1,12 +1,18 @@
 [user]
-	name = Sanjay Senthilkumar
-	email = 183524427+JaySanSen@users.noreply.github.com
-	signingkey = FA10D62727198FA8
+  name = Sanjay Senthilkumar
+  email = 183524427+JaySanSen@users.noreply.github.com
+  signingkey = FA10D62727198FA8
 [commit]
-	gpgsign = true
-	template = /home/sanjay/.gitmessage.txt
+  gpgsign = true
+  template = /home/sanjay/.gitmessage.txt
 [tag]
-	gpgsign = true
+  gpgsign = true
 [core]
-	excludesfile = /home/sanjay/.gitignore_global
-	editor = nvim
+  excludesfile = /home/sanjay/.gitignore_global
+  editor = nvim
+[fetch]
+  prune = true
+  pruneTags = true
+  all = true
+[init]
+  defaultBranch = main

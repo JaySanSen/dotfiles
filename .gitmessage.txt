@@ -9,7 +9,8 @@
 
 
 # Include at least one empty line before it. Format: 
-# Co-authored-by: name <user@users.noreply.github.com>
+# Author: Sanjay Senthilkumar <183524427+JaySanSen@users.noreply.github.com>
+# Co-Author: name < >
 
 #
 # 1. Separate subject from body with a blank line
