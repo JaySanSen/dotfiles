@@ -1,0 +1,18 @@
+ln -s ~/Desktop/personal/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/Desktop/personal/dotfiles/nvim ~/.config/nvim
+
+
+The directory structure we create in the other location (in this case personal files) should match the folder structure of what we are trying to create.
+
+for example nvim files are placed in .config/nvim so the nvim files should be placed in dotfiles/nvim (dotfiles - is just a random name take which in this case acts like the .config folder)
+
+ln -s ~/Desktop/personal/dotfiles/Code/User/settings.json  ~/.config/Code/User/settings.json   -> this is for vscode settings.json
+
+
+
+to create sym links
+editing any place will create the changes in the other place since they are linked to each other
+
+to remove links use the rm command.
+ex: rm ~/.gitconfig
+this will just remove the link and leave the original file in the dotfiles directory
