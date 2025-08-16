@@ -80,6 +80,21 @@ noremap \ "_
 xnoremap p P
 
 
+" Splits and unsplit
+map <leader>sh <Action>(SplitHorizontally)
+map <leader>sv <Action>(SplitVertically)
+map <leader>cs <Action>(Unsplit)
+map <leader>csa <Action>(UnsplitAll)
+
+" Navigate between splits using home row hjkl and alt key. Alt l will move to right split. Alt k to up etc
+map <A-h> <C-w>h
+map <A-j> <C-w>j
+map <A-k> <C-w>k
+map <A-l> <C-w>l
+
+" Enable temporary word wrap. Press again to remove word wrap
+map <leader>ww <Action>(EditorToggleUseSoftWraps)
+
 " --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
 
 " Highlight copied text
