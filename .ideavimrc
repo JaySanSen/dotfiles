@@ -14,6 +14,10 @@ set scrolloff=5
 " Set relative numbers for easier navigation
 set rnu
 
+inoremap <A-;> <Esc>
+vnoremap <A-;> <Esc>
+
+
 " map the leader key <leader>
 let mapleader = ' '
 " noremap <leader>cc :edit ~/.ideavimrc<cr>
@@ -41,7 +45,15 @@ map <leader>gtc <Action>(GotoTest)
 " Go to line but this can be achieved using Vim :linenumber and enter like :25 or use linenumberG like 25G
 " map <leader>gl <Action>(GotoLine)
 
-
+" Find all the places where it is used. To close the panel it opens use shift + esc
+map <leader>fu <Action>(FindUsages)
+map <leader>su <Action>(ShowUsages)
+map <leader>vs <Action>(ViewSource)
+map <leader>qi <Action>(QuickImplementations)
+map <leader>qt <Action>(QuickTypeDefinition)
+map <leader>et <Action>(ExpressionTypeInfo)
+map <leader>sh <Action>(ShowHoverInfo)
+map <leader>oo <Action>(FileStructurePopup)
 
 
 map <leader>mj <Action>(MoveLineDown)
@@ -106,8 +118,8 @@ xnoremap p P
 " Splits and unsplit
 map <leader>sh <Action>(SplitHorizontally)
 map <leader>sv <Action>(SplitVertically)
-map <leader>cs <Action>(Unsplit)
-map <leader>csa <Action>(UnsplitAll)
+map <leader>us <Action>(Unsplit)
+map <leader>usa <Action>(UnsplitAll)
 
 " Navigate between splits using home row hjkl and alt key. Alt l will move to right split. Alt k to up etc
 map <A-h> <C-w>h
