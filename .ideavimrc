@@ -8,6 +8,9 @@
 " text scroll if you mouse-click near the start or end of the window.
 set scrolloff=5
 
+" set showmode
+" set showcmd
+
 " Set relative numbers for easier navigation
 set rnu
 
@@ -15,8 +18,6 @@ set rnu
 let mapleader = ' '
 " noremap <leader>cc :edit ~/.ideavimrc<cr>
 
-" Go to definition
-map <leader>gd <Action>(GotoImplementation)
 " Go back to place where we came from
 map <leader>gb <Action>(Back)
 " Find class
@@ -25,13 +26,29 @@ map <leader>gc <Action>(GotoClass)
 map <leader>gf <Action>(GotoFile)
 " Find symbol
 map <leader>gs <Action>(GotoSymbol)
+" Find action
+map <leader>ga <Action>(GotoAction)
+" Go to declaration
+map <leader>gd <Action>(GotoDeclaration)
+" Go to type declaration
+map <leader>gt <Action>(GotoTypeDeclaration)
+" Go to implementation. If a base class is being implemented by several other class this will go to the implementation
+map <leader>gi <Action>(GotoImplementation)
+" Go to test case implementation and come back to class
+map <leader>gtc <Action>(GotoTest)
+" Go to super method or parent
+" map <leader>gsm <Action>(GotoSuperMethod)
+" Go to line but this can be achieved using Vim :linenumber and enter like :25 or use linenumberG like 25G
+" map <leader>gl <Action>(GotoLine)
+
+
 
 
 map <leader>mj <Action>(MoveLineDown)
 map <leader>mk <Action>(MoveLineUp)
 
-inoremap <C-k> <Up>
-inoremap <C-j> <Down>
+" inoremap <C-k> <Up>
+" inoremap <C-j> <Down>
 
 " Do incremental searching.
 set incsearch
