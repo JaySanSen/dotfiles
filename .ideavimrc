@@ -7,7 +7,7 @@ set scrolloff=5
 set rnu
 inoremap <A-;> <Esc>
 vnoremap <A-;> <Esc>
-
+inoremap jk <Esc>
 " map the leader key <leader>
 let mapleader = ' '
 " noremap <leader>cc :edit ~/.ideavimrc<cr>
@@ -48,7 +48,7 @@ map <leader>vs <Action>(ViewSource)
 map <leader>qi <Action>(QuickImplementations)
 map <leader>qt <Action>(QuickTypeDefinition)
 map <leader>et <Action>(ExpressionTypeInfo)
-map <leader>sh <Action>(ShowHoverInfo)
+map <leader>gh <Action>(ShowHoverInfo)
 map <leader>oo <Action>(FileStructurePopup)
 
 
@@ -115,11 +115,11 @@ xnoremap p P
 map <leader>sh <Action>(SplitHorizontally)
 map <leader>sv <Action>(SplitVertically)
 map <leader>us <Action>(Unsplit)
-map <leader>usa <Action>(UnsplitAll)
+" map <leader>usa <Action>(UnsplitAll)
 
 " Navigate between splits using home row hjkl and alt key. Alt l will move to right split. Alt k to up etc
 map <A-h> <C-w>h
-map <A-j> <C-w>j
+map <A-i> <C-w>j
 map <A-k> <C-w>k
 map <A-l> <C-w>l
 
