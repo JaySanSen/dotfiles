@@ -1,22 +1,12 @@
-" .ideavimrc is a configuration file for IdeaVim plugin. It uses
-"   the same commands as the original .vimrc configuration.
-" You can find a list of commands here: https://jb.gg/h38q75
-" Find more examples here: https://jb.gg/share-ideavimrc
-
-"" -- Suggested options --
 " Show a few lines of context around the cursor. Note that this makes the
 " text scroll if you mouse-click near the start or end of the window.
 set scrolloff=5
-
 " set showmode
 " set showcmd
-
 " Set relative numbers for easier navigation
 set rnu
-
 inoremap <A-;> <Esc>
 vnoremap <A-;> <Esc>
-
 
 " map the leader key <leader>
 let mapleader = ' '
@@ -44,6 +34,12 @@ map <leader>gtc <Action>(GotoTest)
 " map <leader>gsm <Action>(GotoSuperMethod)
 " Go to line but this can be achieved using Vim :linenumber and enter like :25 or use linenumberG like 25G
 " map <leader>gl <Action>(GotoLine)
+
+" Open Terminal
+map <leader>t <Action>(ActivateTerminalToolWindow)
+
+" Close Active Tab
+map <leader>ct <Action>(CloseEditor)
 
 " Find all the places where it is used. To close the panel it opens use shift + esc
 map <leader>fu <Action>(FindUsages)
@@ -137,7 +133,6 @@ map <leader>ww <Action>(EditorToggleUseSoftWraps)
 " Commentary plugin
 " Plug 'tpope/vim-commentary'
 
-
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "" Map \r to the Reformat Code action
 "map \r <Action>(ReformatCode)
@@ -147,17 +142,15 @@ map <leader>ww <Action>(EditorToggleUseSoftWraps)
 
 "" Map \b to toggle the breakpoint on the current line
 "map \b <Action>(ToggleLineBreakpoint)
-
-
-
-
-
 " How do I map this to Ctrl J / Ctrl K for moving up and down between code selection? Couldn't find any Action Ids for this one
-
 " This can be done in the default settings (outside your rc file). Go to settings > Keymap. Other > List Actions > Select Next Row. Add shortcut there.
-
 " More generally, it is also possible to map Up/Down/Left/Right to Ctrl-[hjkl]. In Keymap: Editor Actions > Down. Using this, you can use Ctrl j/k to walk trough other lists as well. Like for instance the project explorer or a search menu.
 " Try this in your .ideavimrc file:
-
 " inoremap <c-k> <Up>
 " inoremap <c-j> <Down>
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+"" -- Suggested options --

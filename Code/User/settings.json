@@ -1694,5 +1694,8 @@
 			"silent": true
 		},
 	],
-	"vim.mouseSelectionGoesIntoVisualMode": false
+	"vim.mouseSelectionGoesIntoVisualMode": false,
+	"files.exclude": {
+		"**/.git": false
+	}
 }
