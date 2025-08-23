@@ -17,8 +17,10 @@ let mapleader = ' '
 map <leader>lc <Action>(CommentByLineComment)
 
 " block comment
-map <leader>lcc <Action>(CommentByBlockComment)
+map <leader>bc <Action>(CommentByBlockComment)
 
+" format document
+map <leader>fd <Action>(ReformatCode)
 
 " Rename Element
 map <leader>er <Action>(RenameElement)
