@@ -18,3 +18,8 @@
   defaultBranch = main
 [status]
 	showUntrackedFiles = all
+[diff]
+	algorithm = histogram
+[push]
+	default = simple
+	autoSetupRemote = true
