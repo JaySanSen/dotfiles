@@ -8,9 +8,17 @@ set rnu
 inoremap <A-;> <Esc>
 vnoremap <A-;> <Esc>
 inoremap jk <Esc>
+vnoremap nn <Esc>
 " map the leader key <leader>
 let mapleader = ' '
 " noremap <leader>cc :edit ~/.ideavimrc<cr>
+
+" line comment
+map <leader>lc <Action>(CommentByLineComment)
+
+" block comment
+map <leader>lcc <Action>(CommentByBlockComment)
+
 
 " Rename Element
 map <leader>er <Action>(RenameElement)
