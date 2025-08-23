@@ -16,3 +16,5 @@
   all = true
 [init]
   defaultBranch = main
+[status]
+	showUntrackedFiles = all
