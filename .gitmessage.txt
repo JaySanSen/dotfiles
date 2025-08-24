@@ -9,7 +9,7 @@
 
 
 # Include at least one empty line before it. Format: 
-# Author: Sanjay Senthilkumar <183524427+JaySanSen@users.noreply.github.com>
+# Author: JaySanSen <183524427+JaySanSen@users.noreply.github.com>
 # Co-Author: name < >
 
 #
