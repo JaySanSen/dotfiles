@@ -10,8 +10,9 @@
 	"editor.cursorBlinking": "solid",
 	"editor.formatOnSave": false,
 	"editor.stickyScroll.scrollWithEditor": false,
-	"editor.fontFamily": "JetBrains Mono SemiBold",
+	"editor.fontFamily": "JetBrains Mono ExtraBold",
 	"editor.fontSize": 16,
+	// "editor.fontWeight": "bold",
 	"workbench.tree.enableStickyScroll": false,
 	"editor.minimap.enabled": false,
 	"editor.stickyScroll.enabled": false,
@@ -134,6 +135,7 @@
 			"commands": ["workbench.action.splitEditor"],
 			"silent": true
 		},
+	  /*	not really working as going into visual mode and trying to comment just deletes the entire selection
 		{
 			"before": ["<leader>","b","c"],
 			"commands": ["editor.action.blockComment"],
@@ -144,6 +146,7 @@
 			"commands": ["editor.action.commentLine"],
 			"silent": true
 		},
+		*/
 		{
 			"before": ["<leader>","s","c"],
 			"commands": ["workbench.action.showCommands"],
