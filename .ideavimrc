@@ -161,7 +161,7 @@ map <leader>nt :NERDTree<CR>
 " <C-K> 	Jump up to previous sibling of the current directory 	g:NERDTreeMapJumpPrevSibling
 " r 	Recursively refresh the current directory 	g:NERDTreeMapRefresh
 " R 	Recursively refresh the current root 	g:NERDTreeMapRefreshRoot
-" m 	Display the NERDTree menu 	g:NERDTreeMapMenu
+" m 	Display the NERDTree menu 	g:NERDTreeMapMenu. After pressing m will need to select required option from dropdown.for exmpale R for rename. So essentially mR for rename.
 " q 	Close the NERDTree window 	g:NERDTreeMapQuit
 " A 	Zoom (maximize/minimize) the NERDTree window 	g:NERDTreeMapToggleZoom
 " d 	Delete file or directory 	g:NERDTreeMapDelete

@@ -40,12 +40,20 @@
     "command": "runCommands",
     "when": "filesExplorerFocus",
     "args": {
-    "commands": ["workbench.action.focusActiveEditorGroup", "workbench.action.closeSidebar"]
+      "commands": [
+        "workbench.action.focusActiveEditorGroup",
+        "workbench.action.closeSidebar"
+      ]
     }
   },
   {
     "key": "/",
     "command": "list.find",
     "when": "filesExplorerFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   }
 ]
