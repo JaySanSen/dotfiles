@@ -3,7 +3,7 @@
 	"workbench.statusBar.visible": true,
 	"telemetry.telemetryLevel": "off",
 	"files.autoSave": "afterDelay",
-	"files.autoSaveDelay": 10,
+	"files.autoSaveDelay": 1,
 	"editor.renderWhitespace": "all",
 	"editor.wordWrap": "on",
 	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
@@ -35,20 +35,28 @@
 	"editor.fontLigatures": true,
 	// "editor.tabCompletion": "on",
 	// "breadcrumbs.enabled": false,
-	// "workbench.tree.renderIndentGuides": "onHover",
+	 "workbench.tree.renderIndentGuides": "onHover",
 	// "workbench.tree.indent": 16,
 	// "explorer.compactFolders": false,
 	// "explorer.confirmDragAndDrop": true,
-	// "explorer.confirmDelete": false,
+	 "editor.renderLineHighlight": "none",
+	 "explorer.confirmDelete": false,
 	 "explorer.decorations.badges": true, // will show whether files have errors or not
 	 "git.decorations.enabled": true,
 	// "git.openDiffOnClick": true,
+	 "git.alwaysSignOff": true,
+	 "git.enableCommitSigning": true,
+	 "git.pruneOnFetch": true,
+	 "git.autofetch": false,
+	 "git.autorefresh": false,
+	 //"git.autofetchPeriod": 180,
+	 "git.showProgress": true,
 	 "git.countBadge": "all",
 	// "window.titleBarStyle": "custom",
 	// "editor.links": false,
 	// "editor.codeLens": false, // This will disable items like references
 	 "editor.colorDecorators": true,
-	// "editor.parameterHints.enabled": true,
+	 "editor.parameterHints.enabled": true,
 	// "files.trimTrailingWhitespace": true,
 	// "files.trimFinalNewlines": true,
 	// "editor.detectIndentation": false,
@@ -61,12 +69,13 @@
 	//   "comments": "off",
 	//   "strings": "off"
 	// },
-	 "editor.suggestOnTriggerCharacters": false,
+	//  "editor.suggestOnTriggerCharacters": false,
 	// "editor.snippetSuggestions": "top",
-	// "extensions.ignoreRecommendations": true,
+	 "extensions.ignoreRecommendations": true,
+	 "extensions.autoUpdate": false,
+	 "extensions.closeExtensionDetailsOnViewChange": true,
 	 "window.menuBarVisibility": "compact",
 	//Inlay Hints
-	"explorer.confirmDelete": false,
 	"javascript.inlayHints.enumMemberValues.enabled": true,
 	"javascript.inlayHints.functionLikeReturnTypes.enabled": true,
 	"javascript.inlayHints.parameterNames.enabled": "all",
@@ -79,6 +88,8 @@
 	"typescript.inlayHints.parameterTypes.enabled": true,
 	"typescript.inlayHints.propertyDeclarationTypes.enabled": true,
 	"typescript.inlayHints.variableTypes.enabled": true,
+	"java.inlayHints.parameterNames.enabled": "all",
+	"java.completion.matchCase": "off",
 	"editor.inlayHints.padding": true,
 	
 
@@ -169,7 +180,6 @@
 			"commands": ["editor.action.goToDeclaration"],
 			"silent": true
 		},
-	  /*	not really working as going into visual mode and trying to comment just deletes the entire selection
 		{
 			"before": ["<leader>","b","c"],
 			"commands": ["editor.action.blockComment"],
@@ -180,7 +190,6 @@
 			"commands": ["editor.action.commentLine"],
 			"silent": true
 		},
-		*/
 		{
 			"before": ["<leader>","s","c"],
 			"commands": ["workbench.action.showCommands"],
