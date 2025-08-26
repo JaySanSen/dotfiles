@@ -135,6 +135,11 @@
 			"commands": ["workbench.action.splitEditor"],
 			"silent": true
 		},
+		{
+			"before": ["<leader>","e","r"],
+			"commands": ["editor.action.rename"],
+			"silent": true
+		},
 	  /*	not really working as going into visual mode and trying to comment just deletes the entire selection
 		{
 			"before": ["<leader>","b","c"],

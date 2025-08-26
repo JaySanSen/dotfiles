@@ -1,38 +1,5 @@
 // Place your key bindings in this file to override the defaults
 [
-  //{
-  //"key": "ctrl+i ctrl+i",
-  //"command": "editor.action.revealDefinition",
-  //"when": "editorHasDefinitionProvider && editorTextFocus"
-  //},
-  //{
-  //"key": "f12",
-  //"command": "-editor.action.revealDefinition",
-  //"when": "editorHasDefinitionProvider && editorTextFocus"
-  //},
-  //{
-  //"key": "tab",
-  //"command": "-editor.action.inlineSuggest.commit",
-  //"when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || cursorAtInlineEdit && inlineEditIsVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || cursorAtInlineEdit && inlineEditIsVisible && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
-  //},
-  //{
-  //"key": "tab",
-  //"command": "-acceptSelectedSuggestion",
-  //"when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
-  //},
-  //{
-  //"key": "ctrl+k ctrl+k",
-  //"command": "explorer.newFolder"
-  //},
-  //{
-  //"key": "ctrl+n ctrl+n",
-  //"command": "explorer.newFile"
-  //},
-  //{
-  //"key": "ctrl+l",
-  //"command": "-workbench.action.chat.newChat",
-  //"when": "chatIsEnabled && inChat && chatLocation != 'editing-session'"
-  //}
   {
     "key": "alt+n",
     "command": "vim.remap",
@@ -42,5 +9,43 @@
         "<Esc>"
       ]
     }
+  },
+  {
+    "key": "alt+.",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetVisible"
+  },
+  {
+    "key": "alt+,",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetVisible"
+  },
+  {
+    "key": "shift+n",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && !editorFocus && !inputFocus"
+  },
+  {
+    "key": "n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !editorFocus && !inputFocus"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !inputFocus"
+  },
+  {
+    "key": "q",
+    "command": "runCommands",
+    "when": "filesExplorerFocus",
+    "args": {
+    "commands": ["workbench.action.focusActiveEditorGroup", "workbench.action.closeSidebar"]
+    }
+  },
+  {
+    "key": "/",
+    "command": "list.find",
+    "when": "filesExplorerFocus"
   }
 ]
