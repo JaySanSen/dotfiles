@@ -1,6 +1,22 @@
 // Place your key bindings in this file to override the defaults
 [
   {
+    "key": "ctrl-h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl-l",
+    "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "ctrl-k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl-j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
     "key": "alt+n",
     "command": "vim.remap",
     "when": "inputFocus && (vim.mode == 'Insert' || vim.mode == 'Visual' || vim.mode == 'VisualLine')",
@@ -76,9 +92,6 @@
 
 /* // Place your key bindings in this file to override the defaults
 [
-  // =============================
-  // ======= LEADER BINDS ========
-  // =============================
   {
     "key": "space w", // [W]rite current file,
     "command": "workbench.action.files.save",
@@ -169,9 +182,6 @@
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
 
-  // ================================
-  // ======= PANE MANAGEMENT ========
-  // ================================
   {
     "key": "ctrl-h",
     "command": "workbench.action.navigateLeft"
@@ -189,9 +199,6 @@
     "command": "workbench.action.navigateDown"
   },
 
-  // ========================
-  // ======= BUFFERS ========
-  // ========================
   {
     "key": "tab",
     "command": "workbench.action.nextEditorInGroup",
@@ -208,9 +215,6 @@
     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
   },
 
-  // ==========================
-  // ======= FILE TREE ========
-  // ==========================
   {
     "key": "space e",
     "command": "runCommands",
@@ -305,9 +309,6 @@
     "command": "workbench.action.toggleSidebarVisibility",
   },
 
-  // =========================
-  // ======= TERMINAL ========
-  // ========================= 
   {
     "key": "ctrl+shift+j",
     "command": "workbench.action.togglePanel"
@@ -333,10 +334,6 @@
     "when": "terminalFocus"
   },
 
-
-  // =======================
-  // ======= EDITOR ========
-  // ======================= 
   {
     "key": "tab",
     "command": "selectNextSuggestion",
@@ -407,10 +404,6 @@
     "command": "-workbench.action.files.newUntitledFile"
   },
 
-
-  // ========================
-  // ======= HARPOON ========
-  // ========================
   {
     "key": "space a", // [A]dd harpoon
     "command": "vscode-harpoon.addEditor",
@@ -455,10 +448,6 @@
     "key": "cmd+i",
     "command": "composerMode.agent"
   },
-
-  // =======================
-  // ======= CURSOR ========
-  // =======================
   {
     "key": "escape",
     "command": "composer.closeComposerTab",

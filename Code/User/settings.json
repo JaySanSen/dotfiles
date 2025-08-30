@@ -48,7 +48,7 @@
 	 "git.enableCommitSigning": true,
 	 "git.pruneOnFetch": true,
 	 "git.autofetch": false,
-	 "git.autorefresh": false,
+	 "git.autorefresh": true,
 	 //"git.autofetchPeriod": 180,
 	 "git.showProgress": true,
 	 "git.countBadge": "all",
