@@ -49,6 +49,8 @@ map <leader>gtc <Action>(GotoTest)
 " Go to line but this can be achieved using Vim :linenumber and enter like :25 or use linenumberG like 25G
 " map <leader>gl <Action>(GotoLine)
 
+map <leader>fc za
+
 " Open Terminal
 map <leader>t <Action>(ActivateTerminalToolWindow)
 
