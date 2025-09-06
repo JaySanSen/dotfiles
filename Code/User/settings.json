@@ -1,7 +1,11 @@
 {
+	"telemetry.feedback.enabled": false,
+	"telemetry.editStats.details.enabled": false,
+	"redhat.telemetry.enabled": false,
 	"editor.experimental.treeSitterTelemetry": false,
-	"workbench.statusBar.visible": true,
 	"telemetry.telemetryLevel": "off",
+  "explorer.compactFolders": false,
+	"workbench.statusBar.visible": true,
 	"files.autoSave": "afterDelay",
 	"files.autoSaveDelay": 1,
 	"editor.renderWhitespace": "all",
@@ -40,24 +44,24 @@
 	// "workbench.tree.indent": 16,
 	// "explorer.compactFolders": false,
 	// "explorer.confirmDragAndDrop": true,
-	 "editor.renderLineHighlight": "none",
-	 "explorer.confirmDelete": false,
-	 "explorer.decorations.badges": true, // will show whether files have errors or not
-	 "git.decorations.enabled": true,
+	"editor.renderLineHighlight": "none",
+	"explorer.confirmDelete": false,
+	"explorer.decorations.badges": true, // will show whether files have errors or not
+	"git.decorations.enabled": true,
 	// "git.openDiffOnClick": true,
-	 "git.alwaysSignOff": true,
-	 "git.enableCommitSigning": true,
-	 "git.pruneOnFetch": true,
-	 "git.autofetch": false,
-	 "git.autorefresh": true,
-	 //"git.autofetchPeriod": 180,
-	 "git.showProgress": true,
-	 "git.countBadge": "all",
+	"git.alwaysSignOff": true,
+	"git.enableCommitSigning": true,
+	"git.pruneOnFetch": true,
+	"git.autofetch": false,
+	"git.autorefresh": true,
+	//"git.autofetchPeriod": 180,
+	"git.showProgress": true,
+	"git.countBadge": "all",
 	// "window.titleBarStyle": "custom",
 	// "editor.links": false,
 	// "editor.codeLens": false, // This will disable items like references
-	 "editor.colorDecorators": true,
-	 "editor.parameterHints.enabled": true,
+	"editor.colorDecorators": true,
+	"editor.parameterHints.enabled": true,
 	// "files.trimTrailingWhitespace": true,
 	// "files.trimFinalNewlines": true,
 	// "editor.detectIndentation": false,
@@ -72,10 +76,12 @@
 	// },
 	//  "editor.suggestOnTriggerCharacters": false,
 	// "editor.snippetSuggestions": "top",
-	 "extensions.ignoreRecommendations": true,
-	 "extensions.autoUpdate": false,
-	 "extensions.closeExtensionDetailsOnViewChange": true,
-	 "window.menuBarVisibility": "compact",
+
+	"extensions.ignoreRecommendations": true,
+	"extensions.autoUpdate": false,
+	"extensions.closeExtensionDetailsOnViewChange": true,
+	"window.menuBarVisibility": "compact",
+
 	//Inlay Hints
 	"javascript.inlayHints.enumMemberValues.enabled": true,
 	"javascript.inlayHints.functionLikeReturnTypes.enabled": true,
@@ -122,6 +128,12 @@
 			"after": ["<Esc>"]
 		}
 	],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["n","n"],
+      "after": ["<Esc>"]
+    }
+  ],
 	"vim.normalModeKeyBindings": [
 		{
 			"before": ["<leader>","f","f"],
@@ -297,8 +309,8 @@
     "editor.lineHighlightBorder": "#00000000",
     "editor.rangeHighlightBackground": "#E07A471a",
     "editorLink.activeForeground": "#7AB8FF",
-    "editorIndentGuide.background": "#353535",
-    "editorIndentGuide.activeBackground": "#424242",
+    "editorIndentGuide.background1": "#353535",
+    "editorIndentGuide.activeBackground1": "#b9b6b6",
     "editorRuler.foreground": "#424242",
     "editorBracketMatch.background": "#E07A4733",
     "editorBracketMatch.border": "#E07A47",
@@ -470,14 +482,14 @@
     "statusBar.debuggingForeground": "#E4E4E4",
     "statusBar.debuggingBorder": "#00000000",
     "statusBar.noFolderForeground": "#E4E4E4",
-    "statusBar.noFolderBackground": "#C79BFF",
+    "statusBar.noFolderBackground": "#141314",
     "statusBar.noFolderBorder": "#00000000",
     "statusBarItem.activeBackground": "#E4E4E433",
     "statusBarItem.hoverBackground": "#E4E4E41a",
     "statusBarItem.prominentForeground": "#E4E4E4",
     "statusBarItem.prominentBackground": "#00000000",
     "statusBarItem.prominentHoverBackground": "#E4E4E41a",
-    "statusBarItem.remoteBackground": "#7AB8FF",
+    "statusBarItem.remoteBackground": "#1f2122",
     "statusBarItem.remoteForeground": "#E4E4E4",
     "statusBarItem.errorBackground": "#FF7A7A",
     "statusBarItem.errorForeground": "#E4E4E4",
@@ -577,7 +589,7 @@
         "punctuation.definition.comment"
       ],
       "settings": {
-        "foreground": "#969696",
+        "foreground": "#bbbaba",
         "fontStyle": ""
       }
     },

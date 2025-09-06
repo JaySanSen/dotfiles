@@ -86,10 +86,13 @@
     "key": "x",
     "command": "filesExplorer.cut",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "shift shift",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
   }
 ]
-
-
 /* // Place your key bindings in this file to override the defaults
 [
   {
