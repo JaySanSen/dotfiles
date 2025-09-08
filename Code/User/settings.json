@@ -25,7 +25,7 @@
 	"editor.minimap.enabled": false,
 	"editor.stickyScroll.enabled": false,
 	"workbench.editor.showTabs": "single",
-	"workbench.sideBar.location": "left",
+	"workbench.sideBar.location": "right",
 	"window.restoreWindows": "none",
 	"workbench.startupEditor": "none",
 	"editor.tabSize": 2,
@@ -84,6 +84,7 @@
 	"extensions.autoUpdate": false,
 	"extensions.closeExtensionDetailsOnViewChange": true,
 	"window.menuBarVisibility": "compact",
+
 
 	//Inlay Hints
 	"javascript.inlayHints.enumMemberValues.enabled": true,

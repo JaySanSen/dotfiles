@@ -1,6 +1,16 @@
 // Place your key bindings in this file to override the defaults
 [
   {
+    "key": "alt+k",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+j",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus"
+  },
+  {
     "key": "ctrl-h",
     "command": "workbench.action.navigateLeft"
   },
@@ -17,19 +27,19 @@
     "command": "workbench.action.navigateDown"
   },
   {
-    "key": "z",
+    "key": "ctrl+k",
     "command": "editor.action.insertCursorAbove",
     "when": "editorTextFocus && (vim.mode == 'Visual' || vim.mode == 'Normal')"
   },
   {
-    "key": "shift+z",
+    "key": "ctrl+j",
     "command": "editor.action.insertCursorBelow",
     "when": "editorTextFocus && (vim.mode == 'Visual' || vim.mode == 'Normal')"
   },
   {
     "key": "alt+n",
     "command": "vim.remap",
-    "when": "inputFocus && (vim.mode == 'Insert' || vim.mode == 'Visual' || vim.mode == 'VisualLine')",
+    "when": "(editorTextFocus || inputFocus) && (vim.mode == 'Normal' || vim.mode == 'Insert' || vim.mode == 'Visual' || vim.mode == 'VisualLine')",
     "args": {
       "after": [
         "<Esc>"
@@ -45,6 +55,16 @@
     "key": "alt+,",
     "command": "selectNextSuggestion",
     "when": "suggestWidgetVisible"
+  },
+  {
+    "key": "alt+.",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inCommandPalette || inQuickOpen"
+  },
+  {
+    "key": "alt+,",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inCommandPalette || inQuickOpen"
   },
   {
     "key": "shift+n",
@@ -101,8 +121,19 @@
     "key": "shift shift",
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminal.active"
-  }
+  },
+/*   {
+    "key": "space b c",
+    "command": "editor.action.blockComment",
+    "when":"editorTextFocus && vim.mode == 'VisualLine'"
+  },
+  {
+    "key": "space l c",
+    "command": "editor.action.commentLine",
+    "when":"editorTextFocus && (vim.mode == 'VisualLine')"
+  } */
 ]
+ 
 /* // Place your key bindings in this file to override the defaults
 [
   {
