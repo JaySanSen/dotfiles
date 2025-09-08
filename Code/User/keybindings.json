@@ -17,6 +17,16 @@
     "command": "workbench.action.navigateDown"
   },
   {
+    "key": "z",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus && (vim.mode == 'Visual' || vim.mode == 'Normal')"
+  },
+  {
+    "key": "shift+z",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus && (vim.mode == 'Visual' || vim.mode == 'Normal')"
+  },
+  {
     "key": "alt+n",
     "command": "vim.remap",
     "when": "inputFocus && (vim.mode == 'Insert' || vim.mode == 'Visual' || vim.mode == 'VisualLine')",

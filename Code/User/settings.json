@@ -1,10 +1,13 @@
 {
 	"telemetry.feedback.enabled": false,
 	"telemetry.editStats.details.enabled": false,
+  "telemetry.editStats.enabled": false,
 	"redhat.telemetry.enabled": false,
 	"editor.experimental.treeSitterTelemetry": false,
 	"telemetry.telemetryLevel": "off",
   "explorer.compactFolders": false,
+  "workbench.activityBar.location": "top",
+  "workbench.enableExperiments": false,
 	"workbench.statusBar.visible": true,
 	"files.autoSave": "afterDelay",
 	"files.autoSaveDelay": 1,
@@ -17,7 +20,7 @@
 	"editor.fontFamily": "JetBrains Mono ExtraBold",
 	"editor.fontSize": 16,
 	"editor.smoothScrolling": true,
-	// "editor.fontWeight": "bold",
+	//"editor.fontWeight": "bold",
 	"workbench.tree.enableStickyScroll": false,
 	"editor.minimap.enabled": false,
 	"editor.stickyScroll.enabled": false,
@@ -38,12 +41,12 @@
 	"editor.inlayHints.fontSize": 10,
 	"editor.lineNumbers": "relative",
 	"editor.fontLigatures": true,
-	// "editor.tabCompletion": "on",
+	//"editor.tabCompletion": "on",
 	"breadcrumbs.enabled": false,
 	"workbench.tree.renderIndentGuides": "onHover",
-	// "workbench.tree.indent": 16,
-	// "explorer.compactFolders": false,
-	// "explorer.confirmDragAndDrop": true,
+	//"workbench.tree.indent": 16,
+	//"explorer.compactFolders": false,
+	//"explorer.confirmDragAndDrop": true,
 	"editor.renderLineHighlight": "none",
 	"explorer.confirmDelete": false,
 	"explorer.decorations.badges": true, // will show whether files have errors or not
@@ -57,25 +60,25 @@
 	//"git.autofetchPeriod": 180,
 	"git.showProgress": true,
 	"git.countBadge": "all",
-	// "window.titleBarStyle": "custom",
-	// "editor.links": false,
-	// "editor.codeLens": false, // This will disable items like references
+	//"window.titleBarStyle": "custom",
+	//"editor.links": false,
+	//"editor.codeLens": false, // This will disable items like references
 	"editor.colorDecorators": true,
 	"editor.parameterHints.enabled": true,
-	// "files.trimTrailingWhitespace": true,
-	// "files.trimFinalNewlines": true,
-	// "editor.detectIndentation": false,
-	// "editor.guides.indentation": false,
-	// "editor.occurrencesHighlight": "singleFile",
-	// "editor.selectionHighlight": true,
-	// "editor.autoClosingQuotes": "always",
-	// "editor.quickSuggestions": {
+	//"files.trimTrailingWhitespace": true,
+	//"files.trimFinalNewlines": true,
+	//"editor.detectIndentation": false,
+	//"editor.guides.indentation": false,
+	//"editor.occurrencesHighlight": "singleFile",
+	//"editor.selectionHighlight": true,
+	//"editor.autoClosingQuotes": "always",
+	//"editor.quickSuggestions": {
 	//   "other": "off",
 	//   "comments": "off",
 	//   "strings": "off"
 	// },
-	//  "editor.suggestOnTriggerCharacters": false,
-	// "editor.snippetSuggestions": "top",
+	//"editor.suggestOnTriggerCharacters": false,
+	//"editor.snippetSuggestions": "top",
 
 	"extensions.ignoreRecommendations": true,
 	"extensions.autoUpdate": false,
@@ -98,7 +101,10 @@
 	"java.inlayHints.parameterNames.enabled": "all",
 	"java.completion.matchCase": "off",
 	"editor.inlayHints.padding": true,
+  "editor.inlayHints.enabled": "on",
 	
+
+  "java.help.showReleaseNotes": false,
 
 	"vim.leader": "<space>",
 	"vim.useSystemClipboard": true,
@@ -233,10 +239,7 @@
 		"**/.git": false
 	},
 
-
-
 	"workbench.colorCustomizations": {
-
     "focusBorder": "#E07A47",
     "foreground": "#E4E4E4",
     "disabledForeground": "#D0D0D0",
@@ -589,7 +592,7 @@
         "punctuation.definition.comment"
       ],
       "settings": {
-        "foreground": "#bbbaba",
+        "foreground": "#868686",
         "fontStyle": ""
       }
     },
@@ -945,5 +948,4 @@
     },
 		]
 	},
-	"java.help.showReleaseNotes": false,
 }
