@@ -122,6 +122,22 @@
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminal.active"
   },
+  {
+    "key": "9",
+    "command": "vim.remap",
+    "when": "vim.mode == 'Normal' && editorTextFocus",
+    "args": {
+      "after": ["ctrl+d"]
+    }
+  },
+  {
+    "key": "0",
+    "command": "vim.remap",
+    "when": "vim.mode == 'Normal' && editorTextFocus",
+    "args": {
+      "after": ["ctrl+u"]
+    }
+  }
 /*   {
     "key": "space b c",
     "command": "editor.action.blockComment",
