@@ -12,7 +12,7 @@
 	"files.autoSave": "afterDelay",
 	"files.autoSaveDelay": 1,
 	"editor.renderWhitespace": "all",
-	"editor.wordWrap": "on",
+	"editor.wordWrap": "off",
 	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 	"editor.cursorBlinking": "solid",
 	"editor.formatOnSave": false,
@@ -115,6 +115,7 @@
 	"vim.highlightedyank.duration": 200,
 	"vim.scroll": 0,
 	"vim.autoSwitchInputMethod.enable": false,
+  "vim.showcmd": false,
 
 
 	"extensions.experimental.affinity": {
@@ -125,7 +126,7 @@
 		"<C-s>": true,
 		"<C-z>": true,
 		"<C-p>": true,
-		"<C-f>": true,
+		"<C-f>": false,
 		"<C-c>": true,
 		"<C-v>": true
 	},
