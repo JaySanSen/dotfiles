@@ -167,30 +167,66 @@
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
   {
+    "key": "space g r", // [G]oto [R]eferences
+    "command": "editor.action.goToReferences",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space g i", // [G]oto [I]mplementation
+    "command": "editor.action.goToImplementation",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
     "key": "space f c", // [F]old [C]ode
     "command": "editor.fold",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
   {
+    "key": "space s v", // [S]plit [V]ertical
+    "command": "workbench.action.splitEditor",
+    "when": "(editorTextFocus || !inputFocus) && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space s d", // [S]plit [V]ertical
+    "command": "workbench.action.splitEditorDown",
+    "when": "(editorTextFocus || !inputFocus) && vim.mode == 'Normal'"
+  },
+  {
     "key": "space s c", // [S]how [C]ommands
     "command": "workbench.action.showCommands",
-    "when": "(!editorFocus && !inputFocus) || vim.mode == 'Normal'"
+    "when": "(editorTextFocus || !inputFocus) && vim.mode == 'Normal'"
   },
   {
     "key": "space r f", // [R]ecent [F]olders
     "command": "workbench.action.openRecent",
-    "when": "(!editorFocus && !inputFocus) || vim.mode == 'Normal'"
+    "when": "(editorTextFocus || !inputFocus) && vim.mode == 'Normal'"
   },
   {
     "key": "space t s", // [T]oggle [S]idebar
     "command": "workbench.action.toggleSidebarVisibility",
-    "when": "(!editorFocus && !inputFocus) || vim.mode == 'Normal'"
+    "when": "(editorTextFocus || !inputFocus) && vim.mode == 'Normal'"
   },
   {
     "key": "space n t", // [N]erd [T]ree
     "command": "workbench.view.explorer",
-    "when": "(!editorFocus && !inputFocus) || vim.mode == 'Normal'"
+    "when": "(editorTextFocus || !inputFocus) && vim.mode == 'Normal'"
   },
+  {
+    "key": "space c s", // [C]lose [S]plit
+    "command": "workbench.action.closeEditorsInGroup",
+    "when": "(editorTextFocus || !inputFocus) && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space e r", // [E]lement [R]ename
+    "command": "editor.action.rename",
+    "when": "vim.mode == 'Normal' && editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+]
+
+//!inputFocus && !inputBoxFocus && !inChatInput && !inQuickInput && !chatInputHasAgent && !chatInputHasFocus && !chatInputHasText && !findInputFocussed && !textInputFocus && !quickInputAlignment && !quickInputType && !renameInputFocused && !renameInputVisible && !searchInputBoxFocus && !replaceInputBoxFocus && !replaceInputFocussed && !breakpointInputFocused && !iconSelectBoxInputEmpty && !LinkedEditingInputVisible && !iconSelectBoxInputFocus
+
+/*
+
   {
     "key": "space s v", // [S]plit [V]ertical
     "command": "workbench.action.splitEditor",
@@ -201,9 +237,6 @@
     "command": "workbench.action.splitEditorDown",
     "when": "(!editorFocus && !inputFocus) || vim.mode == 'Normal'"
   },
-]
-/*
-
   {
     "key": "space f s", // [F]ormat [S]election
     "command": "editor.action.formatSelection",

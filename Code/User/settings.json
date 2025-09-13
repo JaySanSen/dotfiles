@@ -60,6 +60,8 @@
 	//"git.autofetchPeriod": 180,
 	"git.showProgress": true,
 	"git.countBadge": "all",
+  "git.showPushSuccessNotification": true,
+  "git.openRepositoryInParentFolders": "always",
 	//"window.titleBarStyle": "custom",
 	//"editor.links": false,
 	//"editor.codeLens": false, // This will disable items like references
@@ -143,11 +145,6 @@
     }
   ],
 	"vim.normalModeKeyBindings": [
-		{
-			"before": ["<leader>","e","r"],
-			"commands": ["editor.action.rename"],
-			"silent": true
-		},
 		{
 			"before": ["<leader>","g","r"],
 			"commands": ["editor.action.goToReferences"],
@@ -884,5 +881,5 @@
       }
     },
 		]
-	}
+  },
 }
