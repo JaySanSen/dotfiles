@@ -177,6 +177,16 @@
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
   {
+    "key": "space e s", // [E]ditor [S]ymbols
+    "command": "workbench.action.gotoSymbol",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space w s", // [W]orkbench [S]ymbols
+    "command": "workbench.action.showAllSymbols",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
     "key": "space f c", // [F]old [C]ode
     "command": "editor.fold",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"

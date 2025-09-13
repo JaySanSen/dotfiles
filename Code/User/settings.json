@@ -146,11 +146,6 @@
   ],
 	"vim.normalModeKeyBindings": [
 		{
-			"before": ["<leader>","g","s"],
-			"commands": ["workbench.action.showAllSymbols"], // for only editor symbols use workbench.action.gotoSymbol
-			"silent": true
-		},
-		{
 			"before": ["<leader>","f","s"],
 			"commands": ["editor.action.formatSelection"],
 			"silent": true
