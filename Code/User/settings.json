@@ -144,36 +144,6 @@
   ],
 	"vim.normalModeKeyBindings": [
 		{
-			"before": ["<leader>","f","f"],
-			"commands": ["workbench.action.quickOpen"],
-			"silent": true
-		},
-    {
-      "before": ["<leader>", "g", "b"],
-      "commands": ["workbench.action.navigateBack"],
-      "silent": true
-    },
-		{
-			"before": ["<leader>","n","t"],
-			"commands": ["workbench.view.explorer"],
-			"silent": true
-		},
-		{
-			"before": ["<leader>","f","d"],
-			"commands": ["editor.action.formatDocument"],
-			"silent": true
-		},
-		{
-			"before": ["<leader>","c","t"],
-			"commands": ["workbench.action.closeActiveEditor"],
-			"silent": true
-		},
-		{
-			"before": ["<leader>","s","v"],
-			"commands": ["workbench.action.splitEditor"],
-			"silent": true
-		},
-		{
 			"before": ["<leader>","e","r"],
 			"commands": ["editor.action.rename"],
 			"silent": true
@@ -189,33 +159,8 @@
 			"silent": true
 		},
 		{
-			"before": ["<leader>","g","h"],
-			"commands": ["editor.action.showHover"],
-			"silent": true
-		},
-		{
 			"before": ["<leader>","g","s"],
 			"commands": ["workbench.action.showAllSymbols"], // for only editor symbols use workbench.action.gotoSymbol
-			"silent": true
-		},
-		{
-			"before": ["<leader>","g","d"],
-			"commands": ["editor.action.goToDeclaration"],
-			"silent": true
-		},
-		{
-			"before": ["<leader>","b","c"],
-			"commands": ["editor.action.blockComment"],
-			"silent": true
-		},
-		{
-			"before": ["<leader>","l","c"],
-			"commands": ["editor.action.commentLine"],
-			"silent": true
-		},
-		{
-			"before": ["<leader>","s","c"],
-			"commands": ["workbench.action.showCommands"],
 			"silent": true
 		},
 		{
@@ -223,16 +168,6 @@
 			"commands": ["editor.action.formatSelection"],
 			"silent": true
 		},
-		{
-			"before": ["<leader>","f","c"],
-			"commands": ["editor.fold"],
-			"silent": true
-		},
-		{
-			"before": ["<leader>","t","s"],
-			"commands": ["workbench.action.toggleSidebarVisibility"],
-			"silent": true
-		}
 	],
 	"vim.mouseSelectionGoesIntoVisualMode": false,
 	
@@ -300,7 +235,7 @@
     "editor.foreground": "#E4E4E4",
     "editorLineNumber.foreground": "#5E5E5E",
     "editorLineNumber.activeForeground": "#E4E4E4",
-    "editorCursor.foreground": "#daab94",
+    "editorCursor.foreground": "#c09b89",
     "editor.selectionBackground": "#E07A474d",
     "editor.selectionHighlightBackground": "#E07A4733",
     "editor.inactiveSelectionBackground": "#E07A4726",
@@ -605,7 +540,7 @@
         "punctuation.definition.string"
       ],
       "settings": {
-        "foreground": "#86E89A"
+        "foreground": "#ebba70",
       }
     },
     {
@@ -739,7 +674,7 @@
         "support.type.property-name"
       ],
       "settings": {
-        "foreground": "#9C9893"
+        "foreground": "#cc95ff"
       }
     },
     {
@@ -949,5 +884,5 @@
       }
     },
 		]
-	},
+	}
 }
