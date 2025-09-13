@@ -162,7 +162,7 @@
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
   {
-    "key": "space g d", // [G]lance [H]over
+    "key": "space g d", // [G]oto [D]eclaration
     "command": "editor.action.goToDeclaration",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
