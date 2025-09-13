@@ -10,6 +10,7 @@
     "command": "editor.action.moveLinesDownAction",
     "when": "editorTextFocus"
   },
+  // Navigating splits and tabs
   {
     "key": "ctrl-h",
     "command": "workbench.action.navigateLeft"
@@ -26,6 +27,7 @@
     "key": "ctrl-j",
     "command": "workbench.action.navigateDown"
   },
+  // Navigating splits and tabs
   {
     "key": "alt+n",
     "command": "vim.remap",
@@ -36,6 +38,7 @@
       ]
     }
   },
+  // Selecting from suggestions instead of arrow keys
   {
     "key": "alt+.",
     "command": "selectPrevSuggestion",
@@ -56,6 +59,8 @@
     "command": "workbench.action.quickOpenSelectNext",
     "when": "inCommandPalette || inQuickOpen"
   },
+  // Selecting from suggestions instead of arrow keys
+  // File Tree navigation
   {
     "key": "shift+n",
     "command": "explorer.newFolder",
@@ -107,6 +112,7 @@
     "command": "filesExplorer.cut",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
+  // File Tree Navigation
   {
     "key": "shift shift",
     "command": "workbench.action.terminal.toggleTerminal",
@@ -116,8 +122,102 @@
     "key": "alt+e",
     "command": "editor.action.rename",
     "when": "vim.mode == 'Normal' && editorHasRenameProvider && editorTextFocus && !editorReadonly"
-  }
-  /* {
+  },
+  //Git
+  {
+    "key": "space g g", // [G]o [G]it
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.view.scm",
+        "workbench.scm.focus"
+      ]
+    },
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  //Git
+  {
+    "key": "space f f", // [F]ind [F]ile
+    "command": "workbench.action.quickOpen",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space g b", // [G]o [B]ack
+    "command": "workbench.action.navigateBack",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space f d", // [F]ormat [D]ocument
+    "command": "editor.action.formatDocument",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space c t", // [C]lose [T]ab
+    "command": "workbench.action.closeActiveEditor",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space g h", // [G]lance [H]over
+    "command": "editor.action.showHover",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space g d", // [G]lance [H]over
+    "command": "editor.action.goToDeclaration",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space f c", // [F]old [C]ode
+    "command": "editor.fold",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space s c", // [S]how [C]ommands
+    "command": "workbench.action.showCommands",
+    "when": ""
+  },
+  {
+    "key": "space r f", // [R]ecent [F]olders
+    "command": "workbench.action.openRecent",
+    "when": ""
+  },
+  {
+    "key": "space t s", // [T]oggle [S]idebar
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": ""
+  },
+  {
+    "key": "space n t", // [N]erd [T]ree
+    "command": "workbench.view.explorer",
+    "when": ""
+  },
+]
+/*
+
+
+  {
+    "key": "space s c", // [S]how [C]ommands
+    "command": "workbench.action.showCommands",
+    "when": ""
+  },
+  {
+    "key": "space r f", // [R]ecent [F]olders
+    "command": "workbench.action.openRecent",
+    "when": ""
+  },
+  {
+    "key": "space t s", // [T]oggle [S]idebar
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": ""
+  },
+  {
+    "key": "space n t", // [N]erd [T]ree
+    "command": "workbench.view.explorer",
+    "when": ""
+  },
+
+{
+
     "key": "9",
     "command": "vim.remap",
     "when": "vim.mode == 'Normal' && editorTextFocus",
@@ -133,7 +233,7 @@
       "after": ["ctrl+u"]
     }
   }
-{
+  {
     "key": "space b c",
     "command": "editor.action.blockComment",
     "when":"editorTextFocus && vim.mode == 'VisualLine'"
@@ -143,7 +243,6 @@
     "command": "editor.action.commentLine",
     "when":"editorTextFocus && (vim.mode == 'VisualLine')"
   } */
-]
 /* // Place your key bindings in this file to override the defaults
 [
   {
