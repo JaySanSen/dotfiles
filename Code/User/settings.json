@@ -143,16 +143,6 @@
     }
   ],
 	"vim.normalModeKeyBindings": [
-    {
-      "before": ["<leader>","t","t"],
-     "commands": ["workbench.action.createTerminalEditor"],
-     "silent": true
-    },
-		{
-			"before": ["<leader>","s","v"],
-			"commands": ["workbench.action.splitEditor"],
-			"silent": true
-		},
 		{
 			"before": ["<leader>","e","r"],
 			"commands": ["editor.action.rename"],
@@ -171,16 +161,6 @@
 		{
 			"before": ["<leader>","g","s"],
 			"commands": ["workbench.action.showAllSymbols"], // for only editor symbols use workbench.action.gotoSymbol
-			"silent": true
-		},
-		{
-			"before": ["<leader>","b","c"],
-			"commands": ["editor.action.blockComment"],
-			"silent": true
-		},
-		{
-			"before": ["<leader>","l","c"],
-			"commands": ["editor.action.commentLine"],
 			"silent": true
 		},
 		{

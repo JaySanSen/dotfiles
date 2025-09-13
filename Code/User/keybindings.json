@@ -174,27 +174,41 @@
   {
     "key": "space s c", // [S]how [C]ommands
     "command": "workbench.action.showCommands",
-    "when": ""
+    "when": "(!editorFocus && !inputFocus) || vim.mode == 'Normal'"
   },
   {
     "key": "space r f", // [R]ecent [F]olders
     "command": "workbench.action.openRecent",
-    "when": ""
+    "when": "(!editorFocus && !inputFocus) || vim.mode == 'Normal'"
   },
   {
     "key": "space t s", // [T]oggle [S]idebar
     "command": "workbench.action.toggleSidebarVisibility",
-    "when": ""
+    "when": "(!editorFocus && !inputFocus) || vim.mode == 'Normal'"
   },
   {
     "key": "space n t", // [N]erd [T]ree
     "command": "workbench.view.explorer",
-    "when": ""
+    "when": "(!editorFocus && !inputFocus) || vim.mode == 'Normal'"
+  },
+  {
+    "key": "space s v", // [S]plit [V]ertical
+    "command": "workbench.action.splitEditor",
+    "when": "(!editorFocus && !inputFocus) || vim.mode == 'Normal'"
+  },
+  {
+    "key": "space s d", // [S]plit [D]own
+    "command": "workbench.action.splitEditorDown",
+    "when": "(!editorFocus && !inputFocus) || vim.mode == 'Normal'"
   },
 ]
 /*
 
-
+  {
+    "key": "space f s", // [F]ormat [S]election
+    "command": "editor.action.formatSelection",
+    "when": "!editorFocus && !inputFocus) && (vim.mode == 'Visual' || vim.mode == 'VisualLine')"
+  },
   {
     "key": "space s c", // [S]how [C]ommands
     "command": "workbench.action.showCommands",
