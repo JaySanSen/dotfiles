@@ -147,6 +147,11 @@
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
   {
+    "key": "space g f", // [G]o [F]orward
+    "command": "workbench.action.navigateForward",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
     "key": "space f d", // [F]ormat [D]ocument
     "command": "editor.action.formatDocument",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
