@@ -114,7 +114,7 @@
   },
   // File Tree Navigation
   {
-    "key": "shift shift",
+    "key": "alt+t",
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminal.active"
   },
@@ -136,6 +136,11 @@
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
   //Git
+  {
+    "key": "alt+h",
+    "command": "toggleSuggestionDetails",
+    "when": "suggestWidgetVisible"
+  },
   {
     "key": "space f f", // [F]ind [F]ile
     "command": "workbench.action.quickOpen",
@@ -207,14 +212,14 @@
     "when": "(editorTextFocus || !inputFocus) && vim.mode == 'Normal'"
   },
   {
-    "key": "space s c", // [S]how [C]ommands
+    "key": "alt+c", // [S]how [C]ommands
     "command": "workbench.action.showCommands",
-    "when": "(editorTextFocus || !inputFocus) && vim.mode == 'Normal'"
+    //"when": "(editorTextFocus || !inputFocus) && vim.mode == 'Normal'"
   },
   {
-    "key": "space r f", // [R]ecent [F]olders
+    "key": "alt+o", // [R]ecent [F]olders
     "command": "workbench.action.openRecent",
-    "when": "(editorTextFocus || !inputFocus) && vim.mode == 'Normal'"
+    //"when": "(editorTextFocus || !inputFocus) && vim.mode == 'Normal'"
   },
   {
     "key": "space t s", // [T]oggle [S]idebar
@@ -237,9 +242,7 @@
     "when": "vim.mode == 'Normal' && editorHasRenameProvider && editorTextFocus && !editorReadonly"
   },
 ]
-
 //!inputFocus && !inputBoxFocus && !inChatInput && !inQuickInput && !chatInputHasAgent && !chatInputHasFocus && !chatInputHasText && !findInputFocussed && !textInputFocus && !quickInputAlignment && !quickInputType && !renameInputFocused && !renameInputVisible && !searchInputBoxFocus && !replaceInputBoxFocus && !replaceInputFocussed && !breakpointInputFocused && !iconSelectBoxInputEmpty && !LinkedEditingInputVisible && !iconSelectBoxInputFocus
-
 /*
 
   {

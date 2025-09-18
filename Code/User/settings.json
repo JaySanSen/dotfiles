@@ -16,11 +16,18 @@
 	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 	"editor.cursorBlinking": "solid",
 	"editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.autoClosingBrackets": "languageDefined",
+  "editor.autoClosingQuotes": "languageDefined",
+  "editor.autoIndent": "advanced",
+  "editor.autoIndentOnPaste": false,
+  "editor.hover.delay": 50,
+  "editor.hover.sticky": true,
 	"editor.stickyScroll.scrollWithEditor": false,
 	"editor.fontFamily": "JetBrains Mono ExtraBold",
 	"editor.fontSize": 16,
 	"editor.smoothScrolling": true,
-	//"editor.fontWeight": "bold",
 	"workbench.tree.enableStickyScroll": false,
 	"editor.minimap.enabled": false,
 	"editor.stickyScroll.enabled": false,
@@ -37,37 +44,38 @@
 	"workbench.editor.empty.hint": "hidden",
 	"editor.mouseWheelZoom": true,
 	"files.autoSaveWhenNoErrors": true,
-	//"update.enableWindowsBackgroundUpdates": false,
 	"editor.inlayHints.fontSize": 10,
 	"editor.lineNumbers": "relative",
 	"editor.fontLigatures": true,
-	//"editor.tabCompletion": "on",
 	"breadcrumbs.enabled": false,
 	"workbench.tree.renderIndentGuides": "onHover",
-  //"editor.rulers": [96],
-	//"workbench.tree.indent": 16,
-	//"explorer.compactFolders": false,
-	//"explorer.confirmDragAndDrop": true,
 	"editor.renderLineHighlight": "none",
 	"explorer.confirmDelete": false,
 	"explorer.decorations.badges": true, // will show whether files have errors or not
 	"git.decorations.enabled": true,
-	// "git.openDiffOnClick": true,
 	"git.alwaysSignOff": true,
 	"git.enableCommitSigning": true,
 	"git.pruneOnFetch": true,
 	"git.autofetch": false,
 	"git.autorefresh": true,
-	//"git.autofetchPeriod": 180,
 	"git.showProgress": true,
 	"git.countBadge": "all",
   "git.showPushSuccessNotification": true,
   "git.openRepositoryInParentFolders": "always",
+	"editor.colorDecorators": true,
+	"editor.parameterHints.enabled": true,
 	//"window.titleBarStyle": "custom",
 	//"editor.links": false,
 	//"editor.codeLens": false, // This will disable items like references
-	"editor.colorDecorators": true,
-	"editor.parameterHints.enabled": true,
+	//"git.autofetchPeriod": 180,
+	// "git.openDiffOnClick": true,
+	//"editor.tabCompletion": "on",
+	//"editor.fontWeight": "bold",
+	//"update.enableWindowsBackgroundUpdates": false,
+  //"editor.rulers": [96],
+	//"workbench.tree.indent": 16,
+	//"explorer.compactFolders": false,
+	//"explorer.confirmDragAndDrop": true,
 	//"files.trimTrailingWhitespace": true,
 	//"files.trimFinalNewlines": true,
 	//"editor.detectIndentation": false,
@@ -82,14 +90,16 @@
 	// },
 	//"editor.suggestOnTriggerCharacters": false,
 	//"editor.snippetSuggestions": "top",
-
+  
 	"extensions.ignoreRecommendations": true,
 	"extensions.autoUpdate": false,
 	"extensions.closeExtensionDetailsOnViewChange": true,
 	"window.menuBarVisibility": "compact",
-
-
+  
+  
 	//Inlay Hints
+  "editor.inlayHints.padding": true,
+  "editor.inlayHints.enabled": "on",
 	"javascript.inlayHints.enumMemberValues.enabled": true,
 	"javascript.inlayHints.functionLikeReturnTypes.enabled": true,
 	"javascript.inlayHints.parameterNames.enabled": "all",
@@ -104,12 +114,9 @@
 	"typescript.inlayHints.variableTypes.enabled": true,
 	"java.inlayHints.parameterNames.enabled": "all",
 	"java.completion.matchCase": "off",
-	"editor.inlayHints.padding": true,
-  "editor.inlayHints.enabled": "on",
-	
-
   "java.help.showReleaseNotes": false,
-
+  
+  
 	"vim.leader": "<space>",
 	"vim.useSystemClipboard": true,
 	"vim.hlsearch": true,
@@ -119,6 +126,7 @@
 	"vim.scroll": 0,
 	"vim.autoSwitchInputMethod.enable": false,
   "vim.showcmd": false,
+  "vim.matchpairs": "(:),{:},[:],<:>",
 
 
 	"extensions.experimental.affinity": {
