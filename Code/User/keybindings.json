@@ -27,16 +27,19 @@
     "key": "ctrl-j",
     "command": "workbench.action.navigateDown"
   },
+  {
+    "key": "alt+i", // increase size
+    "command": "workbench.action.increaseViewSize"
+  },
+  {
+    "key": "alt+d", // decrease size
+    "command": "workbench.action.decreaseViewSize"
+  },
   // Navigating splits and tabs
   {
     "key": "alt+n",
-    "command": "vim.remap",
-    "when": "(editorTextFocus || inputFocus) && (vim.mode == 'Normal' || vim.mode == 'Insert' || vim.mode == 'Visual' || vim.mode == 'VisualLine')",
-    "args": {
-      "after": [
-        "<Esc>"
-      ]
-    }
+    "command": "editor.action.triggerSuggest",
+    //"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
   },
   // Selecting from suggestions instead of arrow keys
   {
