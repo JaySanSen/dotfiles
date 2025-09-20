@@ -1,7 +1,3 @@
--- Setting up lazy nvim plugin manager
-require("config.lazy")
-
-
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
@@ -62,3 +58,5 @@ vim.opt.guicursor = {
 --	"a:blinkwait700-blinkoff400-blinkon250", -- All modes: blinking settings
 --	"sm:block-blinkwait175-blinkoff150-blinkon175", -- Showmatch: block cursor with specific blinking settings
 }
+vim.keymap.set("i", "jk", "<Esc>")
+vim.cmd.colorscheme("catppuccin")
