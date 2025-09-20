@@ -11,6 +11,8 @@
 	"workbench.statusBar.visible": true,
 	"files.autoSave": "afterDelay",
 	"files.autoSaveDelay": 1,
+  "editor.selectionHighlight": true,
+  "editor.occurrencesHighlight": "off",
 	"editor.renderWhitespace": "all",
 	"editor.wordWrap": "off",
 	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
