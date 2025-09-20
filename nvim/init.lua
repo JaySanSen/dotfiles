@@ -58,5 +58,19 @@ vim.opt.guicursor = {
 --	"a:blinkwait700-blinkoff400-blinkon250", -- All modes: blinking settings
 --	"sm:block-blinkwait175-blinkoff150-blinkon175", -- Showmatch: block cursor with specific blinking settings
 }
-vim.keymap.set("i", "jk", "<Esc>")
 vim.cmd.colorscheme("catppuccin")
+
+-- REQUIRE --
+require("custom.netrw")
+require("custom.statusline")
+
+
+-- KEYMAPS --
+--
+vim.keymap.set("n", "<leader>e", ":25Lexplore<CR>")
+vim.keymap.set("n", "<leader>ff", ":find ")
+vim.keymap.set("i", "jk", "<Esc>")
+-- reload config
+vim.keymap.set("n", "<leader>r", ":source ~/.config/nvim/init.lua<CR> \
+                                  :source ~/.config/nvim/lua/custom/statusline.lua<CR> \
+                                  :source ~/.config/nvim/lua/custom/netrw.lua<CR>")
