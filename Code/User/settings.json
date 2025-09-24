@@ -29,7 +29,7 @@
 	"editor.stickyScroll.scrollWithEditor": false,
 	"editor.fontFamily": "'Monaspace Neon', monospace",
   "editor.fontWeight": "bold",
-	"editor.fontSize": 20,
+	"editor.fontSize": 16,
 	"editor.smoothScrolling": true,
 	"workbench.tree.enableStickyScroll": false,
 	"editor.minimap.enabled": false,
