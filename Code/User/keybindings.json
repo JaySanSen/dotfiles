@@ -82,7 +82,7 @@
   {
     "key": "q",
     "command": "runCommands",
-    "when": "filesExplorerFocus",
+    "when": "filesExplorerFocus && !inputFocus && !inputBoxFocus",
     "args": {
       "commands": [
         "workbench.action.focusActiveEditorGroup",
