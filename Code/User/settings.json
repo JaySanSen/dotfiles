@@ -142,6 +142,8 @@
   "vim.matchpairs": "(:),{:},[:],<:>",
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1,
+    "redhat.java":1,
+    "golang.Go":1
   },
   "vim.handleKeys": {
     "<C-d>": true,
