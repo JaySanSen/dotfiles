@@ -194,6 +194,7 @@
   "files.exclude": {
     "**/.git": false
   },
+  "window.titleBarStyle": "custom",
   "workbench.colorCustomizations": {
     "focusBorder": "#8288e0",
     "foreground": "#E4E4E4",
