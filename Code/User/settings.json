@@ -192,7 +192,7 @@
   //],
   "vim.mouseSelectionGoesIntoVisualMode": true,
   "files.exclude": {
-    "**/.git": false
+    "**/.git": true
   },
   "window.titleBarStyle": "custom",
   "workbench.colorCustomizations": {
@@ -356,12 +356,12 @@
     "menu.separatorBackground": "#000000",
     "menubar.selectionBackground": "#8288e033",
     "menubar.selectionForeground": "#E4E4E4",
-    "minimap.findMatchHighlight": "#FFA65D",
-    "minimap.selectionHighlight": "#8288e0",
+    "minimap.findMatchHighlight": "#ffa65d9f",
+    "minimap.selectionHighlight": "#8288e0cb",
     "minimap.errorHighlight": "#FF7A7A",
     "minimap.warningHighlight": "#FFDF61",
     "minimap.background": "#000000",
-    "minimap.selectionOccurrenceHighlight": "#8288e0",
+    "minimap.selectionOccurrenceHighlight": "#8288e03f",
     "minimap.foregroundOpacity": "#000000aa",
     "minimapSlider.background": "#8288e033",
     "minimapSlider.hoverBackground": "#8288e04d",
@@ -904,5 +904,4 @@
       },
     ]
   },
-  "workbench.colorTheme": "Default Dark+",
 }
