@@ -31,6 +31,7 @@
   "terminal.integrated.fontFamily": "'Monaspace Neon', monospace",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontWeight": "bold",
+  "terminal.integrated.defaultProfile.linux": "zsh",
   "editor.fontWeight": "bold",
   "editor.fontSize": 16,
   "editor.smoothScrolling": true,
@@ -57,6 +58,7 @@
   "workbench.tree.renderIndentGuides": "onHover",
   "editor.renderLineHighlight": "none",
   "explorer.confirmDelete": false,
+  "window.confirmSaveUntitledWorkspace": false,
   "explorer.decorations.badges": true, // will show whether files have errors or not
   "git.decorations.enabled": true,
   "git.alwaysSignOff": true,
