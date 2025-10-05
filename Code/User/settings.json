@@ -73,9 +73,15 @@
   "git.countBadge": "all",
   "git.showPushSuccessNotification": true,
   "git.openRepositoryInParentFolders": "always",
+  "git.showCommitInput": true,
+  "git.closeDiffOnOperation": false,
+  "git.untrackedChanges": "mixed",
+  "git.timeline.showAuthor": true,
   "mergeEditor.diffAlgorithm": "advanced",
   "editor.colorDecorators": true,
   "editor.parameterHints.enabled": true,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
   //"window.titleBarStyle": "custom",
   //"editor.links": false,
   //"editor.codeLens": false, // This will disable items like references
@@ -157,26 +163,26 @@
     "<C-c>": true,
     "<C-v>": true
   },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["d"], "after": ["\"", "_", "d"] },
+    { "before": ["c"], "after": ["\"", "_", "c"] },
+    { "before": ["x"], "after": ["\"", "_", "x"] },
+    { "before": ["p"], "after": ["\"", "0", "p"] }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    { "before": ["d"], "after": ["\"", "_", "d"] },
+    { "before": ["c"], "after": ["\"", "_", "c"] },
+    { "before": ["x"], "after": ["\"", "_", "x"] },
+    { "before": ["p"], "after": ["\"", "0", "p"] }
+  ],
   "vim.insertModeKeyBindings": [
     {
-      "before": [
-        "j",
-        "k"
-      ],
-      "after": [
-        "<Esc>"
-      ]
+      "before": ["j","k"], "after": ["<Esc>"]
     }
   ],
   "vim.visualModeKeyBindings": [
     {
-      "before": [
-        "n",
-        "n"
-      ],
-      "after": [
-        "<Esc>"
-      ]
+      "before": ["n","n"],"after": ["<Esc>"]
     }
   ],
   //"vim.normalModeKeyBindings": [
@@ -905,5 +911,13 @@
         }
       },
     ]
+  },
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "jsonc": false
   },
 }

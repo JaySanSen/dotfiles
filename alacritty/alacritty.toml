@@ -7,7 +7,7 @@ normal = { family = "Monaspace Neon", style = "ExtraBold" }
 size = 12.5
 
 [terminal]
-shell = "/bin/bash"
+shell = "/bin/zsh"
 
 [colors.primary]
 background = '#000000'
