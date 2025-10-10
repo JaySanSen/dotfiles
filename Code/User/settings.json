@@ -82,6 +82,14 @@
   "editor.parameterHints.enabled": true,
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.horizontal": "hidden",
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/*.class": true,
+    "**/target/**": true,
+    "**/build/**": true 
+  },
   //"window.titleBarStyle": "custom",
   //"editor.links": false,
   //"editor.codeLens": false, // This will disable items like references
