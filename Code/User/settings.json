@@ -30,15 +30,25 @@
   "editor.fontFamily": "'Monaspace Neon', monospace",
   "terminal.integrated.fontFamily": "'Monaspace Neon', monospace",
   "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontWeight": "bold",
+  //"terminal.integrated.fontWeight": "bold",
   "terminal.integrated.defaultProfile.linux": "zsh",
-  "editor.fontWeight": "bold",
+  //"editor.fontWeight": "bold",
   "editor.fontSize": 16,
   "editor.smoothScrolling": true,
   "workbench.tree.enableStickyScroll": false,
   "editor.minimap.enabled": false,
   "editor.stickyScroll.enabled": false,
+  "editor.cursorSurroundingLines": 8,
+  "editor.gotoLocation.multipleImplementations": "peek",
   "workbench.editor.showTabs": "single",
+  "window.confirmBeforeClose": "never",
+  "explorer.confirmDragAndDrop": false,
+  "zenMode.showTabs": "single",
+  "zenMode.fullScreen": true,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.centerLayout": true,
+  "zenMode.hideActivityBar": true,
+  "zenMode.hideStatusBar": true,
   "workbench.sideBar.location": "right",
   "window.restoreWindows": "none",
   "workbench.startupEditor": "newUntitledFile",
@@ -77,6 +87,8 @@
   "git.closeDiffOnOperation": false,
   "git.untrackedChanges": "mixed",
   "git.timeline.showAuthor": true,
+  "git.confirmSync": true,
+  "git.openDiffOnClick": true,
   "mergeEditor.diffAlgorithm": "advanced",
   "editor.colorDecorators": true,
   "editor.parameterHints.enabled": true,
@@ -90,8 +102,9 @@
     "**/target/**": true,
     "**/build/**": true 
   },
+  "workbench.editor.labelFormat": "short",
+  "editor.links": false,
   //"window.titleBarStyle": "custom",
-  //"editor.links": false,
   //"editor.codeLens": false, // This will disable items like references
   //"git.autofetchPeriod": 180,
   // "git.openDiffOnClick": true,
@@ -167,9 +180,10 @@
     "<C-s>": true,
     "<C-z>": true,
     "<C-p>": true,
-    "<C-f>": false,
+    "<C-f>": true,
     "<C-c>": true,
-    "<C-v>": true
+    "<C-v>": true,
+    "<C-a>": true
   },
   "vim.normalModeKeyBindingsNonRecursive": [
     { "before": ["d"], "after": ["\"", "_", "d"] },
@@ -270,7 +284,7 @@
     "editor.foreground": "#E4E4E4",
     "editorLineNumber.foreground": "#5E5E5E",
     "editorLineNumber.activeForeground": "#E4E4E4",
-    "editorCursor.foreground": "#dd9d7d",
+    "editorCursor.foreground": "#6b4f03",
     "editor.selectionBackground": "#8288e04d",
     "editor.selectionHighlightBackground": "#8288e033",
     "editor.inactiveSelectionBackground": "#8288e026",
@@ -554,7 +568,8 @@
           "punctuation.definition.variable"
         ],
         "settings": {
-          "foreground": "#E4E4E4"
+          "foreground": "#dbf7ba"
+          //"foreground": "#E4E4E4"
         }
       },
       {
@@ -618,7 +633,6 @@
         ],
         "settings": {
           "foreground": "#C79BFF",
-          "fontStyle": "bold"
         }
       },
       {
@@ -777,7 +791,7 @@
         ],
         "settings": {
           "foreground": "#FFFFFF",
-          "fontStyle": "bold underline"
+          //"fontStyle": "bold underline"
         }
       },
       {
@@ -919,13 +933,5 @@
         }
       },
     ]
-  },
-  "github.copilot.nextEditSuggestions.enabled": false,
-  "github.copilot.enable": {
-    "*": false,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false,
-    "jsonc": false
   },
 }

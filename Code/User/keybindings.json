@@ -55,12 +55,12 @@
   {
     "key": "alt+.",
     "command": "workbench.action.quickOpenSelectPrevious",
-    "when": "inCommandPalette || inQuickOpen"
+    "when": "inCommandPalette || inQuickOpen || codeActionMenuVisible"
   },
   {
     "key": "alt+,",
     "command": "workbench.action.quickOpenSelectNext",
-    "when": "inCommandPalette || inQuickOpen"
+    "when": "inCommandPalette || inQuickOpen || codeActionMenuVisible"
   },
   // Selecting from suggestions instead of arrow keys
   // File Tree navigation
@@ -271,5 +271,9 @@
     "key": "space e r", // [E]lement [R]ename
     "command": "editor.action.rename",
     "when": "vim.mode == 'Normal' && editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+z",
+    "command": "workbench.action.toggleZenMode",
   },
 ]
