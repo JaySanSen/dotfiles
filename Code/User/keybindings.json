@@ -128,12 +128,12 @@
   },
   //Git
   {
-    "key": "alt+g", // [G]o [G]it
+    "key": "ctrl+-", // [G]o [G]it
     "command": "runCommands",
     "args": {
       "commands": [
         "workbench.view.scm",
-        "workbench.scm.focus"
+        "workbench.scm.focus",
       ]
     },
   },

@@ -9,7 +9,6 @@
   "workbench.activityBar.location": "top",
   "workbench.enableExperiments": false,
   "workbench.statusBar.visible": true,
-  "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1,
   "editor.selectionHighlight": true,
   "editor.occurrencesHighlight": "off",
@@ -94,13 +93,15 @@
   "editor.parameterHints.enabled": true,
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.horizontal": "hidden",
+  "search.useGlobalIgnoreFiles": true,
   "search.exclude": {
     "**/node_modules": true,
     "**/bower_components": true,
     "**/*.code-search": true,
     "**/*.class": true,
     "**/target/**": true,
-    "**/build/**": true 
+    "**/build/**": true,
+    "**/.angular/**": true
   },
   "workbench.editor.labelFormat": "short",
   "editor.links": false,
@@ -137,17 +138,17 @@
   "editor.inlayHints.padding": true,
   "editor.inlayHints.enabled": "on",
   "javascript.inlayHints.enumMemberValues.enabled": true,
-  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
-  "javascript.inlayHints.parameterNames.enabled": "all",
-  "javascript.inlayHints.parameterTypes.enabled": true,
-  "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
-  "javascript.inlayHints.variableTypes.enabled": true,
-  "typescript.inlayHints.enumMemberValues.enabled": true,
-  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-  "typescript.inlayHints.parameterNames.enabled": "all",
-  "typescript.inlayHints.parameterTypes.enabled": true,
-  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
-  "typescript.inlayHints.variableTypes.enabled": true,
+  // "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  // "javascript.inlayHints.parameterNames.enabled": "all",
+  // "javascript.inlayHints.parameterTypes.enabled": true,
+  // "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  // "javascript.inlayHints.variableTypes.enabled": true,
+  // "typescript.inlayHints.enumMemberValues.enabled": true,
+  // "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  // "typescript.inlayHints.parameterNames.enabled": "all",
+  // "typescript.inlayHints.parameterTypes.enabled": true,
+  // "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  // "typescript.inlayHints.variableTypes.enabled": true,
   "go.inlayHints.assignVariableTypes": true,
   "go.inlayHints.compositeLiteralFields": true,
   "go.inlayHints.constantValues": true,
@@ -172,8 +173,8 @@
   "vim.matchpairs": "(:),{:},[:],<:>",
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1,
-    "redhat.java":1,
-    "golang.Go":1
+    "redhat.java": 1,
+    "golang.Go": 1
   },
   "vim.handleKeys": {
     "<C-d>": true,
@@ -185,26 +186,44 @@
     "<C-v>": true,
     "<C-a>": true
   },
-  "vim.normalModeKeyBindingsNonRecursive": [
-    { "before": ["d"], "after": ["\"", "_", "d"] },
-    { "before": ["c"], "after": ["\"", "_", "c"] },
-    { "before": ["x"], "after": ["\"", "_", "x"] },
-    { "before": ["p"], "after": ["\"", "0", "p"] }
-  ],
   "vim.visualModeKeyBindingsNonRecursive": [
-    { "before": ["d"], "after": ["\"", "_", "d"] },
-    { "before": ["c"], "after": ["\"", "_", "c"] },
-    { "before": ["x"], "after": ["\"", "_", "x"] },
-    { "before": ["p"], "after": ["\"", "0", "p"] }
+    {
+      "before": ["p",],
+      "after": ["p","g","v","y"]
+    }
   ],
+  // "vim.normalModeKeyBindingsNonRecursive": [
+  //   { "before": ["d"], "after": ["\"", "_", "d"] },
+  //   { "before": ["c"], "after": ["\"", "_", "c"] },
+  //   { "before": ["x"], "after": ["\"", "_", "x"] },
+  //   { "before": ["p"], "after": ["\"", "0", "p"] }
+  // ],
+  // "vim.visualModeKeyBindingsNonRecursive": [
+  //   { "before": ["d"], "after": ["\"", "_", "d"] },
+  //   { "before": ["c"], "after": ["\"", "_", "c"] },
+  //   { "before": ["x"], "after": ["\"", "_", "x"] },
+  //   { "before": ["p"], "after": ["\"", "0", "p"] }
+  // ],
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j","k"], "after": ["<Esc>"]
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   "vim.visualModeKeyBindings": [
     {
-      "before": ["n","n"],"after": ["<Esc>"]
+      "before": [
+        "n",
+        "n"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   //"vim.normalModeKeyBindings": [
