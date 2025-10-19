@@ -9,6 +9,7 @@
   "workbench.activityBar.location": "top",
   "workbench.enableExperiments": false,
   "workbench.statusBar.visible": true,
+  "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1,
   "editor.selectionHighlight": true,
   "editor.occurrencesHighlight": "off",
@@ -161,6 +162,8 @@
   "java.inlayHints.parameterNames.enabled": "all",
   "java.completion.matchCase": "off",
   "java.help.showReleaseNotes": false,
+  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
   "vim.hlsearch": true,
