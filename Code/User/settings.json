@@ -159,7 +159,7 @@
   "go.inlayHints.compositeLiteralTypes": true,
   "go.inlayHints.functionTypeParameters": true,
   "go.survey.prompt": false,
-  "java.inlayHints.parameterNames.enabled": "all",
+  // "java.inlayHints.parameterNames.enabled": "all",
   "java.completion.matchCase": "off",
   "java.help.showReleaseNotes": false,
   "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
@@ -956,4 +956,5 @@
       },
     ]
   },
+  "workbench.iconTheme": "material-icon-theme",
 }

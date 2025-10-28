@@ -276,4 +276,10 @@
     "key": "alt+z",
     "command": "workbench.action.toggleZenMode",
   },
+  {
+    "key": "space f q",
+    "command": "editor.action.quickFix",
+    "when": "(editorTextFocus || !inputFocus) && vim.mode == 'Normal'"
+    //"when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
 ]
