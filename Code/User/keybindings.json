@@ -121,24 +121,16 @@
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminal.active"
   },
+  /*
   {
     "key": "space s p",
     "command": "workbench.profiles.actions.switchProfile",
     "when": "vim.mode == 'Normal' && editorTextFocus && !editorReadonly"
   },
+  */
   //Git
   {
-    "key": "ctrl+-", // [G]o [G]it
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        "workbench.view.scm",
-        "workbench.scm.focus",
-      ]
-    },
-  },
-  {
-    "key": "space g g", // [G]o [G]it
+    "key": "alt+g", // [G]o [G]it
     "command": "runCommands",
     "args": {
       "commands": [
@@ -280,6 +272,16 @@
     "key": "space f q",
     "command": "editor.action.quickFix",
     "when": "(editorTextFocus || !inputFocus) && vim.mode == 'Normal'"
+    //"when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+-",
+    "command": "workbench.action.toggleSidebarVisibility",
+    //"when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+;",
+    "command": "workbench.action.toggleAuxiliaryBar",
     //"when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
   },
 ]
