@@ -275,6 +275,12 @@
     //"when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
   },
   {
+    "key": "space s a",
+    "command": "editor.action.sourceAction",
+    "when": "(editorTextFocus || !inputFocus) && vim.mode == 'Normal'"
+    //"when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+  {
     "key": "alt+-",
     "command": "workbench.action.toggleSidebarVisibility",
     //"when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
@@ -283,5 +289,15 @@
     "key": "alt+;",
     "command": "workbench.action.toggleAuxiliaryBar",
     //"when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+.",
+    "command": "selectPrevCodeAction",
+    "when": "codeActionMenuVisible"
+  },
+  {
+    "key": "alt+,",
+    "command": "selectNextCodeAction",
+    "when": "codeActionMenuVisible"
   },
 ]
