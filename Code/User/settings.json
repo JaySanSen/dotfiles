@@ -271,6 +271,10 @@
   "workbench.iconTheme": "material-icon-theme",
   "java.inlayHints.parameterNames.enabled": "none",
   "window.titleBarStyle": "custom",
+  "github.copilot.enable": {
+    "*": false
+  },
+
   "workbench.colorCustomizations": {
     "focusBorder": "#8288e0",
     "foreground": "#E4E4E4",
@@ -978,8 +982,5 @@
         }
       },
     ]
-  },
-  "github.copilot.enable": {
-    "*": false
-  },
+  }
 }
