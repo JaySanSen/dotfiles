@@ -13,7 +13,7 @@
   "files.autoSaveDelay": 1,
   "editor.selectionHighlight": true,
   "editor.occurrencesHighlight": "off",
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "none",
   "editor.wordWrap": "off",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.cursorBlinking": "solid",
@@ -32,9 +32,10 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontWeight": "500",
   "terminal.integrated.defaultProfile.linux": "zsh",
-  "editor.fontWeight": "500",
+  // "editor.fontWeight": "550",
+  "editor.fontWeight": "650",
   "editor.fontSize": 16,
-  "editor.smoothScrolling": true,
+  "editor.smoothScrolling": false,
   "workbench.tree.enableStickyScroll": false,
   "editor.minimap.enabled": false,
   "editor.stickyScroll.enabled": false,
@@ -102,12 +103,14 @@
     "**/*.class": true,
     "**/target/**": true,
     "**/build/**": true,
-    "**/.angular/**": true
+    "**/.angular/**": true,
+    "**/bin/**": true,
+    "**/.idea/**": true,
   },
   "workbench.editor.labelFormat": "short",
   "editor.links": false,
+  "editor.codeLens": false, // This will disable items like references
   //"window.titleBarStyle": "custom",
-  //"editor.codeLens": false, // This will disable items like references
   //"git.autofetchPeriod": 180,
   // "git.openDiffOnClick": true,
   //"editor.tabCompletion": "on",
@@ -162,8 +165,7 @@
   // "java.inlayHints.parameterNames.enabled": "all",
   "java.completion.matchCase": "off",
   "java.help.showReleaseNotes": false,
-  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
-
+  // "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
   "vim.hlsearch": true,
@@ -191,8 +193,15 @@
   },
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": ["p",],
-      "after": ["p","g","v","y"]
+      "before": [
+        "p",
+      ],
+      "after": [
+        "p",
+        "g",
+        "v",
+        "y"
+      ]
     }
   ],
   // "vim.normalModeKeyBindingsNonRecursive": [
@@ -244,9 +253,21 @@
   //],
   "vim.mouseSelectionGoesIntoVisualMode": true,
   "files.exclude": {
-    "**/.git": true
+    "**/.git": true,
+    "**/.gradle/**": true,
+    "**/build/**": true,
+    "**/.idea/**": true,
+    "**/bin/**": true,
+    "**/node_modules/**": true,
   },
-
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/node_modules/**": true,
+    "**/.gradle/**": true,
+    "**/build/**": true,
+    "**/.idea/**": true,
+    "**/bin/**": true,
+  },
   "workbench.iconTheme": "material-icon-theme",
   "java.inlayHints.parameterNames.enabled": "none",
   "window.titleBarStyle": "custom",
@@ -957,5 +978,8 @@
         }
       },
     ]
+  },
+  "github.copilot.enable": {
+    "*": false
   },
 }
