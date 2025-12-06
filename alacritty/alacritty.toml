@@ -3,7 +3,7 @@ live_config_reload = true
 
 
 [font]
-normal = { family = "Monaspace Neon NF", style = "Regular" }
+normal = { family = "Monaspace Neon NF", style = "SemiBold" }
 size = 12.5
 
 [terminal]
