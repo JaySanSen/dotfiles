@@ -1,6 +1,11 @@
 [general]
 live_config_reload = true
 
+[window]
+decorations = "none"
+startup_mode = "Maximized"
+# Other window settings can go here, e.g.
+# opacity = 0.90
 
 [font]
 normal = { family = "Monaspace Neon NF", style = "SemiBold" }
@@ -36,3 +41,4 @@ white   = '#2a2a2a'
 [window.dimensions]
 columns = 100
 lines = 40
+

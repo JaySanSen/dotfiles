@@ -168,6 +168,7 @@
   // "java.inlayHints.parameterNames.enabled": "all",
   "java.completion.matchCase": "off",
   "java.help.showReleaseNotes": false,
+  // "typescript.experimental.useTsgo": true,
   // "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
@@ -272,9 +273,6 @@
   "workbench.iconTheme": "material-icon-theme",
   "java.inlayHints.parameterNames.enabled": "none",
   "window.titleBarStyle": "custom",
-  "github.copilot.enable": {
-    "*": false
-  },
 
   "workbench.colorCustomizations": {
     "focusBorder": "#8288e0",
