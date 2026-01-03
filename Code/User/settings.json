@@ -33,9 +33,9 @@
   "terminal.integrated.fontWeight": "bold",
   "terminal.integrated.defaultProfile.linux": "zsh",
   // "editor.fontWeight": "550",
-  "editor.fontWeight": "600",
+  "editor.fontWeight": "500",
   "editor.fontSize": 20,
-  "editor.lineHeight": 1.45,
+  // "editor.lineHeight": 1.45,
   "terminal.integrated.lineHeight": 1.25,
   "editor.smoothScrolling": false,
   "workbench.tree.enableStickyScroll": false,
@@ -60,7 +60,7 @@
   "diffEditor.maxComputationTime": 0,
   "update.mode": "none",
   "update.showReleaseNotes": false,
-  "extensions.autoCheckUpdates": false,
+  // "extensions.autoCheckUpdates": false,
   "workbench.editor.empty.hint": "hidden",
   "editor.mouseWheelZoom": true,
   "files.autoSaveWhenNoErrors": false,
@@ -168,8 +168,17 @@
   // "java.inlayHints.parameterNames.enabled": "all",
   "java.completion.matchCase": "off",
   "java.help.showReleaseNotes": false,
-  // "typescript.experimental.useTsgo": true,
+  "editor.guides.bracketPairs": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.matchBrackets": "never",
+  "editor.guides.highlightActiveBracketPair": false,
+  "editor.guides.highlightActiveIndentation": false,
+  "editor.guides.indentation": false,
+  "typescript.experimental.useTsgo": false,
   // "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+  // "java.server.launchMode": "Standard",
+  "workbench.settings.showAISearchToggle": false,
+  "chat.disableAIFeatures": true,
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
   "vim.hlsearch": true,
@@ -273,7 +282,6 @@
   "workbench.iconTheme": "material-icon-theme",
   "java.inlayHints.parameterNames.enabled": "none",
   "window.titleBarStyle": "custom",
-
   "workbench.colorCustomizations": {
     "focusBorder": "#8288e0",
     "foreground": "#E4E4E4",
@@ -981,5 +989,7 @@
         }
       },
     ]
-  }
+  },
+  "gradle.showStoppedDaemons": true,
+  "gradle.nestedProjects": true,
 }
