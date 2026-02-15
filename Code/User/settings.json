@@ -1731,4 +1731,5 @@
 
   "gradle.showStoppedDaemons": true,
   "gradle.nestedProjects": true,
+  "terminal.integrated.initialHint": false,
 }
