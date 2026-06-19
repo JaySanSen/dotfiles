@@ -1,0 +1,50 @@
+format = """
+$time\
+$directory\
+$git_branch\
+$git_status\
+$cmd_duration\
+$character"""
+
+
+# Show only essential symbols in the directory
+[directory]
+style = "cyan bold"
+truncation_length = 1
+truncation_symbol = ""
+truncate_to_repo = false
+
+[git_branch]
+style = "purple"
+symbol = " "
+
+[git_status]
+style = "purple"
+ahead = "⇡"
+diverged = "⇕"
+behind = "⇣"
+untracked = "u"
+
+# Change the prompt character based on shell status
+[character]
+# success_symbol = "[❯](bold green)"
+success_symbol = "[](bold green)"
+# error_symbol = "[❯](bold red)"
+error_symbol = "[](bold red)"
+
+
+# Show 12 hour local time
+[time]
+disabled = false
+use_12hr = true
+# #time_format = '%I:%M:%S %p'
+time_format = '%I:%M %p'
+format = '[$time]($style) '
+
+
+
+# Shows the time taken to complete the command
+[cmd_duration]
+min_time = 250
+show_milliseconds = true
+format = 'took [$duration]($style) '
